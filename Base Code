@@ -1,0 +1,132 @@
+/*** MAIN WRAPPER ***/
+.gform_wrapper {
+    background: #ffffff;
+}
+
+/*** REMOVE LABEL FOR PLACEHOLDER ONLY ***/
+.gform_wrapper .top_label .gfield_label,
+.gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label {
+
+}
+
+.gform_wrapper .gform_body .gform_fields .gfield select {
+    background: #ffffff;
+    border: solid 1px rgba(225,225,225,0.85);
+    border-radius: 0;
+    color: #4d4d4d !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+    padding: 17px 15px !important;
+}
+
+/*** FIELD STYLING ***/
+.gform_wrapper ul.gform_fields li.gfield,
+.gform_wrapper .top_label li.gfield.gf_right_half {
+    padding-right: 0;
+}
+input[type=text], textarea, input[type=password] {
+    background: #ffffff;
+    border: solid 1px rgba(225,225,225,0.85);
+    border-radius: 0;
+    color: #4d4d4d !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+    padding: 17px 15px !important;
+}
+
+/*** FIELD FOCUS STYLING ***/
+input[type=text]:focus,
+input.text:focus,
+input.title:focus,
+textarea:focus {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .2);
+	border: solid 1px rgba(225,225,225,0.75);
+}
+
+/*** MESSAGE BOX TRANSITION ***/
+.gform_wrapper textarea.medium {
+    margin-top: 6px;
+    height: 10em;
+    transition: height .3s ease-out;
+}
+
+/*** MESSAGE BOX FOCUS HEIGHT ***/
+.gform_wrapper textarea.medium:focus {
+    height: 25em;
+}
+
+/*** BUTTON STYLING ***/
+.gform_wrapper .gform_footer input.button,
+.gform_wrapper .gform_footer input[type=submit] {
+    width: 150px;
+	padding: 10px;
+}
+
+.gform_wrapper input[type=submit], [type="reset"], [type="submit"] {
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 300;
+  	font: inherit;
+    padding: 10px 12px;
+    border-radius: 0;
+    background: #4d4d4d;
+    color: #f7f7f7;
+    border: none;
+  	border-radius: 3px;
+    transition: box-shadow .2s ease-in-out;
+}
+
+form#sfwd-mark-complete input#learndash_mark_complete_button[disabled] {
+  color: #ffffff !important;
+}
+
+
+
+/*** BUTTON HOVER STYLING ***/
+.gform_wrapper input[type=submit]:hover {
+    background: #1d207c;
+    color: #fff;
+    box-shadow: 0 4px 10px -5px rgba(0,0,0,0.5);
+}
+
+.gform_wrapper .gform_body .gform_page_footer .gform_next_button, .gform_previous_button {
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 300;
+    padding: 10px 12px;
+    border-radius: 0;
+    background: #222222;
+    color: #ffffff;
+    border: none;
+  	border-radius: 3px;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.gform_wrapper .gform_body .gform_page_footer .gform_next_button:hover {
+    background: #385be8;
+    color: #fff;
+    box-shadow: 0 4px 10px -5px rgba(0,0,0,0.5);
+}
+
+.gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
+  background-color: #43b5ac;
+}
+
+
+/*** PLACEHOLDER ***/
+::-webkit-input-placeholder {
+    /* Chrome */
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+:-moz-placeholder {
+    /* Firefox 4 - 18 */
+    color: rgba(255, 255, 255, 0.7) !important;
+}
