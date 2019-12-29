@@ -2,7 +2,7 @@
 
 /*** MAIN WRAPPER ***/
 .gform_wrapper {
-    background: #ffffff;
+
 }
 
 /*** FIELD STYLING ***/
