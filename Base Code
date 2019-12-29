@@ -61,7 +61,7 @@ textarea:focus {
 .gform_wrapper .gform_footer input.button,
 .gform_wrapper .gform_footer input[type=submit] {
     width: 150px;
-	padding: 10px;
+    padding: 12px 25px;
 }
 
 .gform_wrapper input[type=submit] {
@@ -82,7 +82,7 @@ textarea:focus {
 .gform_wrapper input[type=submit]:hover {
     background: #004D4D;
     color: #fff;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .gform_wrapper .gform_body .gform_page_footer .gform_next_button {
