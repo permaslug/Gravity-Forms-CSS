@@ -1,5 +1,4 @@
 
-
 /*** MAIN WRAPPER ***/
 .gform_wrapper {
 
@@ -13,7 +12,7 @@
 
 
 
-input[type=text], textarea, input[type=password], [type="search"], [type="date"] {
+input[type=text], textarea, input[type=password], [type="search"], [type="date"], [type="tel"], [type="email"] {
     background: #ffffff;
     border: solid 1px rgba(225,225,225,0.85);
     border-radius: 0;
@@ -37,6 +36,8 @@ input[type=text], textarea, input[type=password], [type="search"], [type="date"]
 
 
 /*** FIELD FOCUS STYLING ***/
+
+input:focus,
 input[type=text]:focus,
 input.text:focus,
 input.title:focus,
@@ -60,8 +61,8 @@ textarea:focus {
 /*** BUTTON STYLING ***/
 .gform_wrapper .gform_footer input.button,
 .gform_wrapper .gform_footer input[type=submit] {
-    width: 150px;
-    padding: 12px 25px;
+
+  
 }
 
 .gform_wrapper input[type=submit] {
@@ -69,10 +70,13 @@ textarea:focus {
     text-transform: capitalize;
     font: inherit;
     font-weight: 300;
-    padding: 10px 12px;
+    padding: 12px 25px;
+    width: 150px;
     border-radius: 0;
     background: #137d7d;
     color: #f7f7f7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     border: none;
   	border-radius: 3px;
     transition: box-shadow .2s ease-in-out;
@@ -107,5 +111,3 @@ textarea:focus {
 .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
   background-color: #43b5ac;
 }
-
-
