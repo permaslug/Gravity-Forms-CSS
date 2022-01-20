@@ -1,0 +1,15 @@
+/*
+ * populate_product_link_gf
+ *
+ * @function renders the acf field on the frontend in a gravity form field
+ * @author Taylor Drayson
+ * @since 20/01/22
+ * @usage Replace 'your_parameter' with your gravity form field name
+ * Also replace 'field_name' with acf field name for the post
+*/
+add_filter( 'gform_field_value_link', 'populate_product_link_gf' );
+function populate_product_link_gf( $value ) {
+    $id = get_the_id();
+    return get_field('product_redirect',$id);
+
+}
