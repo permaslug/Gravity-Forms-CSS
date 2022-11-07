@@ -1,0 +1,23 @@
+add_filter( 'gform_field_css_class', function ( $classes, $field, $form ) {
+
+    if ( $field->cssClass == 'read-only' ) {
+        $classes .= ' gfield_readonly';
+    }
+
+    return $classes;
+}, 10, 3 );
+
+add_action( 'gform_enqueue_scripts', function ( $form, $is_ajax ) {
+
+    ?>
+    <script type="text/javascript">
+        document.addEventListener( 'DOMContentLoaded', function() {
+            var readOnlyFields = document.querySelectorAll( '.gfield_readonly input, .gfield_readonly textarea' );
+            Array.prototype.forEach.call( readOnlyFields, function( field ) {
+                field.setAttribute( 'disabled', 'disabled' );
+            } );
+        } );
+    </script>
+    <?php
+
+}, 10, 2 );
